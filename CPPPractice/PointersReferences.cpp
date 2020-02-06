@@ -24,6 +24,8 @@ void PointersReferences::pointRefPractice() {
 		<< "The value of p is " << p << ".\n"
 		<< "The address of p is " << &p << ".\n"
 		<< "The size in bytes of p is " << sizeof p << ".\n\n";
+	delete p;
+	p = nullptr;
 
 	//BUBBLE SORT USING POINTERS 
 	int arr[] = { 4, 2, 30, 82, 25 };
