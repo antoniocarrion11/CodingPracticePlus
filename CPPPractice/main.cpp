@@ -4,12 +4,27 @@
 #include <iostream>
 #include <cstdlib>
 #include "PointersReferences.h"
+#include "Inheritance.h"
+
 
 using namespace std;
 
 int main() {
 	cout << "Hello Tony! \n";
+
+	//Pointer practice
 	PointersReferences().pointRefPractice();
+
+	//Simple Inheritance practice
+	Ship dingy = Ship("SS dingy", 1992);
+	dingy.printNameAndYear();
+
+	CruiseShip stormBorn = CruiseShip("S.S. StormBorn", 2020, 5);
+	stormBorn.printNameAndYear();
+
+	CruiseShip dingyRebuilt = CruiseShip(dingy, 200);
+	dingyRebuilt.printNameAndYear();
+
 }
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu

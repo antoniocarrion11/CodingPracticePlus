@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Inheritance.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="StackVsHeap.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -40,6 +37,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Inheritance.h">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Inheritance.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

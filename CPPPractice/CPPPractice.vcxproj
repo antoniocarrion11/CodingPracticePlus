@@ -142,9 +142,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Inheritance.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="DataStructures.cpp" />
-    <ClCompile Include="Inheritance.cpp" />
+    <ClCompile Include="Inheritance.h" />
     <ClCompile Include="MemoryManagement.cpp" />
     <ClCompile Include="PointersReferences.cpp" />
     <ClCompile Include="PrimitivesAndQualifiers.cpp" />
