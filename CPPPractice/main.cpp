@@ -6,39 +6,47 @@
 #include "PointersReferences.h"
 #include "Inheritance.h"
 #include "DataStructures.h"
+#include "Recursion.h"
 
 using namespace std;
 
 int main() {
 	cout << "Hello Tony! \n";
 
-	//Pointer practice
-	PointersReferences().pointRefPractice();
+	////Pointer practice
+	//PointersReferences().pointRefPractice();
 
-	//Simple Inheritance practice
-	Ship dingy = Ship("SS dingy", 1992);
-	dingy.printNameAndYear();
+	////Simple Inheritance practice
+	//Ship dingy = Ship("SS dingy", 1992);
+	//dingy.printNameAndYear();
 
-	CruiseShip stormBorn = CruiseShip("S.S. StormBorn", 2020, 5);
-	stormBorn.printNameAndYear();
+	//CruiseShip stormBorn = CruiseShip("S.S. StormBorn", 2020, 5);
+	//stormBorn.printNameAndYear();
 
-	CruiseShip dingyRebuilt = CruiseShip(dingy, 200);
-	dingyRebuilt.printNameAndYear();
+	//CruiseShip dingyRebuilt = CruiseShip(dingy, 200);
+	//dingyRebuilt.printNameAndYear();
 
-	//DataStructures
-		//Stack with pointers
-	Stack stack = Stack();
-	stack.push(20);
-	stack.push(19);
-	stack.push(5);
-	stack.printStack();
-	stack.push(4);
-	stack.pop();
-	stack.pop();
-	stack.pop();
-	stack.printStack();
-	stack.pop();
+	//CargoShip cargo = CargoShip(dingy, 3089);
+	//cargo.printNameAndYear();
 
+	////DataStructures
+	//	//Stack with pointers
+	//Stack stack = Stack();
+	//stack.push(20);
+	//stack.push(19);
+	//stack.push(5);
+	//stack.printStack();
+	//stack.push(4);
+	//stack.pop();
+	//stack.pop();
+	//stack.pop();
+	//stack.printStack();
+	//stack.pop();
+
+	//Fibonacci
+	FibonacciSequence fibo = FibonacciSequence();
+	fibo.createFibonacciToPosition(6);
+	fibo.printSequence();
 }
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu

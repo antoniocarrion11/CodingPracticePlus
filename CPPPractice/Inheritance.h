@@ -27,3 +27,15 @@ class CruiseShip : public Ship {
 	private:
 		int passengers;
 };
+
+class CargoShip : public Ship {
+public:
+	CargoShip();
+	CargoShip(Ship ship, int tons);
+	CargoShip(string name, int year, int tons);
+	void setTons(int tons);
+	int getTons();
+	void printNameAndYear();
+private:
+	int tons;
+};

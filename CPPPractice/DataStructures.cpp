@@ -26,7 +26,7 @@ void Stack::push(int value) {
 
 int Stack::pop() {
 	try {
-		if (stackPointer == stackStore + size -1) {
+		if (stackPointer == stackStore + size - 1) {
 			throw overflow_error("stack is empty there is nothing to pop!");
 		}
 		stackPointer++;

@@ -37,3 +37,18 @@ void CruiseShip::printNameAndYear() {
 	cout << "The " << getName() << "'s maiden voyage was in the year " << getYear() << ", and it sailed with " << getPassengers() << " on board" << endl;
 
 }
+
+CargoShip::CargoShip() : Ship(), tons(0) {}
+
+CargoShip::CargoShip(Ship ship, int tons) : Ship(ship), tons(tons) {}
+
+CargoShip::CargoShip(string name, int year, int tons) : Ship(name, year), tons(tons) {}
+
+int CargoShip::getTons() {
+	return tons;
+}
+
+void CargoShip::printNameAndYear() {
+	cout << "The " << getName() << "shipped its package in the year " << getYear() << ", and it sailed with " << getTons() << " tons on board" << endl;
+
+}
