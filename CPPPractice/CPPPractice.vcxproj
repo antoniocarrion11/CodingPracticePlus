@@ -154,6 +154,7 @@
     <ClCompile Include="StringManipulation.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DataStructures.h" />
     <ClInclude Include="PointersReferences.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

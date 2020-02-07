@@ -5,7 +5,7 @@
 #include <cstdlib>
 #include "PointersReferences.h"
 #include "Inheritance.h"
-
+#include "DataStructures.h"
 
 using namespace std;
 
@@ -24,6 +24,17 @@ int main() {
 
 	CruiseShip dingyRebuilt = CruiseShip(dingy, 200);
 	dingyRebuilt.printNameAndYear();
+
+	//DataStructures
+		//Stack with pointers
+	Stack stack = Stack();
+	stack.push(20);
+	stack.push(19);
+	stack.push(5);
+	stack.printStack();
+	cout << stack.pop() << " has been returned" << endl;
+	stack.push(30);
+	stack.printStack();
 
 }
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
