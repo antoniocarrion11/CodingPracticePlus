@@ -32,9 +32,12 @@ int main() {
 	stack.push(19);
 	stack.push(5);
 	stack.printStack();
-	cout << stack.pop() << " has been returned" << endl;
-	stack.push(30);
+	stack.push(4);
+	stack.pop();
+	stack.pop();
+	stack.pop();
 	stack.printStack();
+	stack.pop();
 
 }
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

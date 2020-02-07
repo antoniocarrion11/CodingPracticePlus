@@ -1,25 +1,43 @@
 //Practice for different data structure such as Stacks, Queues, Hashmaps, Linkedlists, and maps
 
 #include <iostream>
+#include<stdexcept>
 #include "DataStructures.h"
+using namespace std;
 
 Stack::Stack() {
-	const size_t size = sizeof stackStore / sizeof stackStore[0];
+	size = sizeof stackStore / sizeof stackStore[0];
 	stackPointer = stackStore + size - 1;
 }
 
 void Stack::push(int value) {
-	*stackPointer = value;
-	cout << *stackPointer << " pushed onto stack" << endl;
-	stackPointer--;
+	try {
+		if (stackPointer == stackStore - 1) {
+			throw underflow_error("stack is full!");
+		}
+		*stackPointer = value;
+		cout << *stackPointer << " pushed onto stack" << endl;
+		stackPointer--;
+	}
+	catch (const std::exception& e) {
+		cout << "EXCEPTION: " << e.what() << endl;
+	}
 }
 
 int Stack::pop() {
-	stackPointer++;
-	cout << *stackPointer << " is popped from the stack" << endl;
-	int result = *stackPointer;
-	*stackPointer = 0;
-	return result;
+	try {
+		if (stackPointer == stackStore + size -1) {
+			throw overflow_error("stack is empty there is nothing to pop!");
+		}
+		stackPointer++;
+		cout << *stackPointer << " is popped from the stack" << endl;
+		int result = *stackPointer;
+		*stackPointer = 0;
+		return result;
+		
+	} catch(const std::exception& e){
+		cout << "EXCEPTION: " << e.what() << endl;
+	}
 }
 
 void Stack::printStack() {
