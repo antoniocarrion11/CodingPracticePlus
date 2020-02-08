@@ -5,8 +5,8 @@ using namespace std;
 class Stack {
 	public:
 		Stack();
-		void push(int value) throw (underflow_error);
-		int pop() throw (overflow_error);
+		void push(int value);
+		int pop();
 		void printStack();
 	private:
 		size_t size;

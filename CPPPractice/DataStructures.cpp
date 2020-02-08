@@ -13,7 +13,7 @@ Stack::Stack() {
 void Stack::push(int value) {
 	try {
 		if (stackPointer == stackStore - 1) {
-			throw underflow_error("stack is full!");
+			throw overflow_error("stack is full!");
 		}
 		*stackPointer = value;
 		cout << *stackPointer << " pushed onto stack" << endl;
@@ -27,7 +27,7 @@ void Stack::push(int value) {
 int Stack::pop() {
 	try {
 		if (stackPointer == stackStore + size - 1) {
-			throw overflow_error("stack is empty there is nothing to pop!");
+			throw underflow_error("stack is empty there is nothing to pop!");
 		}
 		stackPointer++;
 		cout << *stackPointer << " is popped from the stack" << endl;
