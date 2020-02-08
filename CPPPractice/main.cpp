@@ -44,8 +44,12 @@ int main() {
 	stack.pop();
 
 	//Fibonacci
+	cout << "Fibonacci Sequence: " << endl;
+	cout << "enter a number~ ";
+	int position;
+	cin >> position;
 	FibonacciSequence fibo = FibonacciSequence();
-	fibo.createFibonacciToPosition(6);
+	fibo.createFibonacciToPosition(position);
 	fibo.printSequence();
 }
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

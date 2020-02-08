@@ -26,7 +26,7 @@ int FibonacciSequence::createFibonacciToPosition(int pos) {
 void FibonacciSequence::printSequence() {
 
 	for (map<int, int>::iterator i = fibonacciSequence.begin(); i != fibonacciSequence.end(); ++i) {
-		cout << "Pos: " << i->first << ": " << i->second << endl;
+		cout << "Pos " << i->first << ": " << i->second << endl;
 	}
 	
 }
