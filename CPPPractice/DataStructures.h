@@ -21,7 +21,8 @@ class Queue {
 		int dequeue();
 		void printQueue();
 	private:
-		size_t size;
+		size_t max_capacity;
+		int currentSize;
 		int queue[3];
 		int* head;
 		int* tail;

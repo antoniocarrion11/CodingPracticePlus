@@ -46,3 +46,58 @@ void Stack::printStack() {
 		cout << value << endl;
 	}
 }
+
+Queue::Queue() {
+	max_capacity = sizeof queue / sizeof queue[0];
+	currentSize = 0;
+	head = queue;
+	tail = queue;
+}
+
+void Queue::enqueue(int value) {
+	try {
+		if (currentSize < max_capacity) {
+			*tail = value;
+			tail++;
+			currentSize++;
+		}
+		else {
+			throw overflow_error("Line is full!");
+		}
+	}
+	catch (const exception & e) {
+		cout << "EXCEPTION: " << e.what() << endl;
+	}
+}
+
+int Queue::dequeue() {
+	try {
+		if (currentSize > 0) {
+			int result = *head;
+			for (int i = 0; i < currentSize; i++) {
+				if ((head + 1) != tail) {
+					*head = *(head + 1);
+					head++;
+				}
+			}
+			head = queue;
+			tail--;
+			currentSize--;
+			return result;
+		}
+		else {
+			throw underflow_error("nothing to dequeue off the line!");
+		}
+	}
+	catch (const exception & e) {
+		cout << "EXCEPTION: " << e.what() << endl;
+	}
+}
+
+void Queue::printQueue() {
+	cout << "Queue: ";
+	for (int value : queue) {
+		cout << value << "--";
+	}
+	cout << endl;
+}

@@ -43,6 +43,17 @@ int main() {
 	stack.printStack();
 	stack.pop();
 
+	//Queue with pointers
+	Queue queue = Queue();
+	for (int i = 0; i < 4; i++) {
+		queue.printQueue();
+		queue.enqueue(rand());
+	}
+	for (int i = 0; i < 4; i++) {
+		queue.printQueue();
+		queue.dequeue();
+	}
+
 	//Fibonacci
 	cout << "Fibonacci Sequence: " << endl;
 	cout << "enter a number~ ";
