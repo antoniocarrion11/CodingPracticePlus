@@ -55,6 +55,7 @@ Queue::Queue() {
 }
 
 void Queue::enqueue(int value) {
+	cout << "we want to queue up: " << value << endl;
 	try {
 		if (currentSize < max_capacity) {
 			*tail = value;
@@ -74,10 +75,13 @@ int Queue::dequeue() {
 	try {
 		if (currentSize > 0) {
 			int result = *head;
-			for (int i = 0; i < currentSize; i++) {
-				if ((head + 1) != tail) {
+			for (int i = 0; i <= currentSize; i++) {
+				if (head != tail) {
 					*head = *(head + 1);
 					head++;
+				}
+				else {
+					*head = 0;
 				}
 			}
 			head = queue;
