@@ -29,6 +29,10 @@ CruiseShip::CruiseShip(Ship ship, int passengers): Ship(ship), passengers(passen
 
 CruiseShip::CruiseShip(string name, int year, int passengers) : Ship(name, year), passengers(passengers){}
 
+void CruiseShip::setPassengers(int passengers) {
+	this->passengers = passengers;
+}
+
 int CruiseShip::getPassengers() {
 	return passengers;
 }
@@ -43,6 +47,10 @@ CargoShip::CargoShip() : Ship(), tons(0) {}
 CargoShip::CargoShip(Ship ship, int tons) : Ship(ship), tons(tons) {}
 
 CargoShip::CargoShip(string name, int year, int tons) : Ship(name, year), tons(tons) {}
+
+void CargoShip::setTons(int tons) {
+	this->tons = tons;
+}
 
 int CargoShip::getTons() {
 	return tons;

@@ -4,9 +4,6 @@
 #include "PointersReferences.h"
 using namespace std;
 
-PointersReferences::PointersReferences() {}
-PointersReferences::~PointersReferences() {}
-
 void PointersReferences::pointRefPractice() {
 	int i = 10;
 

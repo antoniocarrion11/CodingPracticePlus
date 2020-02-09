@@ -30,3 +30,8 @@ void FibonacciSequence::printSequence() {
 	}
 	
 }
+
+//BinarySearcher::BinarySearcher(vector<int> orderedList) {
+//	this->orderedList = orderedList;
+//}
+

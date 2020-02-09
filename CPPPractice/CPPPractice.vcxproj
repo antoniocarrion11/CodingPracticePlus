@@ -150,13 +150,13 @@
     <ClCompile Include="PointersReferences.cpp" />
     <ClCompile Include="PrimitivesAndQualifiers.cpp" />
     <ClCompile Include="Recursion.cpp" />
-    <ClCompile Include="StackVsHeap.cpp" />
     <ClCompile Include="StringManipulation.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DataStructures.h" />
     <ClInclude Include="PointersReferences.h" />
     <ClInclude Include="Recursion.h" />
+    <ClInclude Include="StringManipulation.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

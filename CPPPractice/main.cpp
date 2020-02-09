@@ -1,5 +1,4 @@
 // CPPPractice.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
 
 #include <iostream>
 #include <cstdlib>
@@ -7,6 +6,7 @@
 #include "Inheritance.h"
 #include "DataStructures.h"
 #include "Recursion.h"
+#include "StringManipulation.h"
 
 using namespace std;
 
@@ -51,6 +51,16 @@ int main() {
 	FibonacciSequence fibo = FibonacciSequence();
 	fibo.createFibonacciToPosition(position);
 	fibo.printSequence();
+
+	//String compression
+	string stringToBeCompressed;
+	cout << "compress String: ";
+	cin >> stringToBeCompressed;
+	cout << endl;
+	cout << "original string: " << stringToBeCompressed << ", compressed string: " 
+			<< StringCompressor(stringToBeCompressed).stringCompression() << endl;
+
+	
 }
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
